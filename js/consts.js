@@ -1,4 +1,4 @@
-const villageIcon = L.icon({iconUrl: "img/maps/botw/icons/village.png", iconSize: [20, 20], iconAnchor: [10, 10]});
+const villageIcon = L.icon({iconUrl: "img/maps/botw/icons/village.png", iconSize: [25, 25], iconAnchor: [10, 10]});
 const statueIcon = L.icon({iconUrl: "img/maps/botw/icons/statue.png", iconSize: [20, 20], iconAnchor: [10, 10]});
 const towerIcon = L.icon({iconUrl: "img/maps/botw/icons/tower.png", iconSize: [20, 20], iconAnchor: [10, 10]});
 const sidequestIcon = L.icon({iconUrl: "img/maps/botw/icons/sidequest.png", iconSize: [20, 20], iconAnchor: [10, 10]});

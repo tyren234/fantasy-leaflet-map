@@ -1,0 +1,754 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boblingrad",
+        "type": "capital",
+        "description": "Stolica gobilnów. Znane również jako Miasto w Chmurach. Mieści się na wielkiej kolumnie sięgającej niemal samego nieba. Znane z pradawnych ruin w klifach przepaści oraz z wynalazków mieszkańców rejonu."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149,
+          488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Walka na Bursztynowym Moście",
+        "type": "event",
+        "description": "Strażnicy w strażnicy na środku Bursztynowego Mostu zostali zamienieni w ghoule, ale udało się je na szczęście pokonać."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          372,
+          218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Esmera",
+        "type": "capital",
+        "description": "Stolica elfów. Leży w magicznym lesie w całości niemal porośniętym żywodrzewami. Żywodrzew jest odporny na magię, a w dodatku twardy jak kamień, dzięki czemu Królestwo Elfów jako jedno z ostatnich zostało wchłonięte do cesarstwa."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          402,
+          510
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dalagorn",
+        "type": "capital",
+        "description": "Stolica Królestwa Krasnoludów. Miasto zbudowane na bazie studni, znajduje się wewnątrz góry Excelsum. Szczyt krasnoludzkiego kunsztu i popis rzemiosła. Jest to miasto w całości położone wewnątrz góry."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          534, 537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kamienna Twierdza",
+        "type": "capital",
+        "description": "Stolica Cesarstwa Neverlandu. Niegdyś wznosiło się tu nie najmniejsze wzniesienie, a na nim przepiękna twierdza zbudowana w całości niemal z granitu. Jednak po wydarzeniach towarzyszących śmierci cesarza Akivina II w miejscu twierdzy został tylko sporych rozmiarów krater. Aktualnie stolica składa się z gęstych kamiennych zabudowań dookoła i w kraterze."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          359,
+          441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arak Khadrun",
+        "type": "capital",
+        "description": "Stolica orków."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          233,
+          431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Atlantyda",
+        "type": "capital",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          583,
+          405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Averland",
+        "type": "capital",
+        "description": "Stolica niziołków. Zrójnowana w czasie wojny południa z północą, na czas wojny przeniesiona do podziemnej jamy pod miastem, ale po śmierci cesarza Akivina II odbudowywana na powierzchni. "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          388,
+          319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amber",
+        "type": "capital",
+        "description": "Stolica ludzi. Znajduje się niedaleko jeziora o tej samej nazwie. Wszystko to dlatego, że jezioro bogate jest w bursztyn, a przy wschodach i zachodach słońca, cała okolica mieni się w kolorze bursztynu."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          389,
+          194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mortos",
+        "type": "capital",
+        "description": "Stolica diabląt. Straszne miejsce, bez wody, bez wytchnienia. Miasto otoczone pustynią. Najbardziej odosobiniona ze wszystkich stolic królestw stanowiących cesarstwo. W dzień nie można tu żyć przez upały, nocą zaś przez mrozy."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134,
+          192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hofenlan",
+        "type": "settlement",
+        "description": "Miejscowość kupiecka znana ze swojego portu i Akademii Kupiectwa i Handlu."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          583,
+          200
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gorczycowo",
+        "type": "settlement",
+        "description": "Mała miejscowość zarządzana przez hrabiego Gorczycę."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          370,
+          273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Turniej o nowego mistrza Aptekarzy",
+        "type": "objective",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          401,
+          182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Obóz łowców gigantów",
+        "type": "molduga",
+        "description": "Od herszszta łowców gigantów poległ Ajleran. Dzielny smokowiec."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          362,
+          291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jajo Pana",
+        "type": "treasure",
+        "description": "Zakopane głęboko na 10 metrów pod ziemią gdzieś w tym lesie."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          359,
+          290
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Śniegopad",
+        "type": "settlement",
+        "description": "Miejscowość znana z tego, że zawsze leży tam śnieg. Żyje tu wielu górników i kopaczy."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          506,
+          487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Złotoryja",
+        "type": "settlement",
+        "description": "Znana z wybitnych kowali i rzemieślników, to miejsce gdzie szkolą się najwybitniejsi krasnoludzcy jublierzy i metalurdzy."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          553,
+          500
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nowy Browar",
+        "type": "settlement",
+        "description": "Niedawno założony nowy browar na niewielkiej wyspie. Robią przepyszne piwo. Możnaby się pokusić o stwierdzenie, że najlepsze."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          472,
+          569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Skarbiec Księżniczki",
+        "type": "settlement",
+        "description": "Stosunkowo nowy budynek zbudowany na życzenie Księżniczki, aby mieścić skarby Królestwa Krasnoludów."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          478,
+          555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gorące Źródła",
+        "type": "settlement",
+        "description": "Miejscowość lecznicza i wypoczynkowa. Mieszkańcy mają tutaj ciekawy zwyczaj przystawania na chwilę w południe, by pomodlić się do swoich bogów."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          510,
+          505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tunel Orika Stałego",
+        "type": "objective",
+        "description": "Dawno zamknięty tunel Orika Stałego, pierwszego cesarza, który postanowił zafundować próby przedostania się za mur. Niestety nie udało się. Dzisiaj w głębi tunelu mieszkają najróżniejsze potwory, a niewielkie grupy kopaczy dorabiają sobie wydobywając tu rzadkie minerały."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          493,
+          598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dwónastnice",
+        "type": "settlement",
+        "description": "Jest tu organizowany wielki targ dwónastego dnia każdego miesiąca."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          480,
+          527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "village.png",
+        "type": "village",
+        "description": "village.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "statue.png",
+        "type": "statue",
+        "description": "statue.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          22
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "tower.png",
+        "type": "tower",
+        "description": "tower.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          44
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "temp.py",
+        "type": "tem",
+        "description": "temp.py"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          66
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sidequest.png",
+        "type": "sidequest",
+        "description": "sidequest.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          88
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "store.png",
+        "type": "store",
+        "description": "store.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          110
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "lynel.png",
+        "type": "lynel",
+        "description": "lynel.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "raft.png",
+        "type": "raft",
+        "description": "raft.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "hinox.png",
+        "type": "hinox",
+        "description": "hinox.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "treasure.png",
+        "type": "treasure",
+        "description": "treasure.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "stable.png",
+        "type": "stable",
+        "description": "stable.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          220
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "jewelry.png",
+        "type": "jewelry",
+        "description": "jewelry.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "pot.png",
+        "type": "pot",
+        "description": "pot.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "memory.png",
+        "type": "memory",
+        "description": "memory.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "fountain.png",
+        "type": "fountain",
+        "description": "fountain.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "armor.png",
+        "type": "armor",
+        "description": "armor.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          330
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "talus.png",
+        "type": "talus",
+        "description": "talus.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "lab.png",
+        "type": "lab",
+        "description": "lab.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "objective.png",
+        "type": "objective",
+        "description": "objective.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "seed.png",
+        "type": "seed",
+        "description": "seed.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "guardian.png",
+        "type": "guardian",
+        "description": "guardian.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          440
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "molduga.png",
+        "type": "molduga",
+        "description": "molduga.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "shrine.png",
+        "type": "shrine",
+        "description": "shrine.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "settlement.png",
+        "type": "settlement",
+        "description": "settlement.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "mainquest.png",
+        "type": "mainquest",
+        "description": "mainquest.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "dye.png",
+        "type": "dye",
+        "description": "dye.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          550
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "shrinequest.png",
+        "type": "shrinequest",
+        "description": "shrinequest.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "inn.png",
+        "type": "inn",
+        "description": "inn.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10,
+          594
+        ]
+      }
+    }
+  ]
+}

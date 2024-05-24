@@ -57,7 +57,7 @@ var popup = L.popup();
 function onMapClick(e) {
     popup
         .setLatLng(e.latlng)
-        .setContent(`Współrzędne: (${Math.round(e.latlng.lat)}, ${Math.round(e.latlng.lng)})`)
+        .setContent(`Współrzędne: (${Math.round(e.latlng.lng)}, ${Math.round(e.latlng.lat)})`)
         .openOn(map);
 }
 
@@ -76,7 +76,7 @@ async function getGeojson(geojsonPath) {
     L.geoJSON(featureCollection, {
         onEachFeature: function (feature, layer) {
 
-            if (feature.properties && feature.properties.name && feature.properties.type && feature.properties.description) {
+            if (feature.properties && feature.properties.name && feature.properties.type ) {
                 layer.bindPopup("<div class='popup'><h1 class='popup'>" + feature.properties.name + "</h1><p class='popup'>" + feature.properties.description + "</p></div>");
                 if (layer instanceof L.Marker) {
                     if (feature.properties.type in iconsMap){
@@ -92,6 +92,6 @@ async function getGeojson(geojsonPath) {
 
 }
 
-geojsonsPaths = ['geojson/neverland/landmarks.geojson']
+geojsonsPaths = ['geojson/neverland/landmarks.json']
 geojsonsPaths.forEach((path) => getGeojson(path));
 
