@@ -1,6 +1,6 @@
 var map = L.map('map', {
-  crs: L.CRS.Simple,
-  maxZoom: 3,
+    crs: L.CRS.Simple,
+    maxZoom: 3,
 }).setView([-100, 100], 3);
 
 const maxBound = 1000;
@@ -10,62 +10,52 @@ map.addLayer(image);
 map.fitBounds(bounds);
 
 map.on("zoomend", function () {
-  console.log(`Zoomed current zoom level: ${map.getZoom()}`);
+    console.log(`Zoomed current zoom level: ${map.getZoom()}`);
 
-  map.eachLayer(function (layer) {
-    map.removeLayer(layer);
-  });
+    map.eachLayer(function (layer) {
+        map.removeLayer(layer);
+    });
 
-  // x is vertical
-  // y is horizontal
-  // 0,0 is in the bottom left corner
+    // x is vertical
+    // y is horizontal
+    // 0,0 is in the bottom left corner
 
-  if (map.getZoom() === 0) {
-    L.imageOverlay('img/maps/botw/tiles/0/0_0.jpg', bounds).addTo(map);
-  } else if (map.getZoom() === 1) {
-    addTiles(2, map.getZoom());
-    // L.imageOverlay('img/maps/botw/tiles/1/0_0.jpg', [[500, 0], [1000, 500]]).addTo(map);
-    // L.imageOverlay('img/maps/botw/tiles/1/0_1.jpg', [[0, 0], [500, 500]]).addTo(map);
-    // L.imageOverlay('img/maps/botw/tiles/1/1_0.jpg', [[500, 500], [1000, 1000]]).addTo(map);
-    // L.imageOverlay('img/maps/botw/tiles/1/1_1.jpg', [[0, 500], [500, 1000]]).addTo(map);
-  } else if (map.getZoom() === 2) {
-    addTiles(4, map.getZoom());
-  } else if (map.getZoom() === 3) {
-    addTiles(8, map.getZoom());
-  } else {
-    L.imageOverlay('img/maps/botw/tiles/0/0_0.jpg', bounds).addTo(map);
-  }
+    if (map.getZoom() === 0) {
+        L.imageOverlay('img/maps/botw/tiles/0/0_0.jpg', bounds).addTo(map);
+    } else if (map.getZoom() === 1) {
+        addTiles(2, map.getZoom());
+        // L.imageOverlay('img/maps/botw/tiles/1/0_0.jpg', [[500, 0], [1000, 500]]).addTo(map);
+        // L.imageOverlay('img/maps/botw/tiles/1/0_1.jpg', [[0, 0], [500, 500]]).addTo(map);
+        // L.imageOverlay('img/maps/botw/tiles/1/1_0.jpg', [[500, 500], [1000, 1000]]).addTo(map);
+        // L.imageOverlay('img/maps/botw/tiles/1/1_1.jpg', [[0, 500], [500, 1000]]).addTo(map);
+    } else if (map.getZoom() === 2) {
+        addTiles(4, map.getZoom());
+    } else if (map.getZoom() === 3) {
+        addTiles(8, map.getZoom());
+    } else {
+        L.imageOverlay('img/maps/botw/tiles/0/0_0.jpg', bounds).addTo(map);
+    }
 })
 
 
 function addTiles(numberOfTilesAcross, zoomLevel) {
-  let boundStep = maxBound / numberOfTilesAcross;
+    let boundStep = maxBound / numberOfTilesAcross;
 
-  for (let column = 0; column < numberOfTilesAcross; column++) {
-    for (let row = 0; row < numberOfTilesAcross; row++) {
-      console.log(`Adding image (${zoomLevel}/${column}_${row}.jpg) with following bounds: ${[[maxBound - boundStep * (row + 1), column * boundStep], [maxBound - row * boundStep, boundStep * (column + 1)]]}`);
-      L.imageOverlay(`img/maps/botw/tiles/${zoomLevel}/${column}_${row}.jpg`, [[maxBound - boundStep * (row + 1), column * boundStep], [maxBound - row * boundStep, boundStep * (column + 1)]]).addTo(map);
+    for (let column = 0; column < numberOfTilesAcross; column++) {
+        for (let row = 0; row < numberOfTilesAcross; row++) {
+            console.log(`Adding image (${zoomLevel}/${column}_${row}.jpg) with following bounds: ${[[maxBound - boundStep * (row + 1), column * boundStep], [maxBound - row * boundStep, boundStep * (column + 1)]]}`);
+            L.imageOverlay(`img/maps/botw/tiles/${zoomLevel}/${column}_${row}.jpg`, [[maxBound - boundStep * (row + 1), column * boundStep], [maxBound - row * boundStep, boundStep * (column + 1)]]).addTo(map);
+        }
     }
-  }
 }
-// var lat, lng;
-//
-// map.addEventListener('mousemove', function(ev) {
-//    lat = ev.latlng.lat;
-//    lng = ev.latlng.lng;
-//    console.log(lat, lng);
-// });
 
+var popup = L.popup();
 
-// L.TileLayer('/img/maps/botw/tiles/{z}/{x}_{y}.jpg', {
-// // L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//   crs: L.CRS.Simple,
-//   maxZoom: 3,
-//   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-// }).addTo(map);
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent(`This point has coordinates (${Math.round(e.latlng.lat)}, ${Math.round(e.latlng.lng)})`)
+        .openOn(map);
+}
 
-// L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//   crs: L.CRS.Simple,
-//   maxZoom: 3,
-//   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-// }).addTo(map);
+map.on('click', onMapClick);
