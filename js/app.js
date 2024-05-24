@@ -1,6 +1,7 @@
 var map = L.map('map', {
     crs: L.CRS.Simple,
     maxZoom: 3,
+    doubleClickZoom: false,
 }).setView([-100, 100], 3);
 
 const maxBound = 750;
@@ -62,6 +63,18 @@ function onMapClick(e) {
 
 map.on('click', onMapClick);
 
+const villageIcon = L.icon({
+    iconUrl: 'img/maps/botw/icons/village.png',
+    iconSize: [20, 20], // size of the icon
+    iconAnchor: [10, 10], // point of the icon which will correspond to marker's location
+});
+const defaultIcon = L.icon({
+    iconUrl: 'img/maps/botw/icons/objective.png',
+    iconSize: [20, 20], // size of the icon
+    iconAnchor: [10, 10], // point of the icon which will correspond to marker's location
+});
+
+
 async function getGeojson(geojsonPath) {
     let featureCollection;
 
@@ -74,8 +87,19 @@ async function getGeojson(geojsonPath) {
 
     L.geoJSON(featureCollection, {
         onEachFeature: function (feature, layer) {
+
             if (feature.properties && feature.properties.name && feature.properties.type && feature.properties.description) {
                 layer.bindPopup("<div class='popup'><h1 class='popup'>" + feature.properties.name + "</h1><p class='popup'>" + feature.properties.description + "</p></div>");
+                if (layer instanceof L.Marker) {
+                    switch (feature.properties.type) {
+                        case "capital":
+                            layer.setIcon(villageIcon);
+                            break;
+                        default:
+                            layer.setIcon(defaultIcon);
+                            break;
+                    }
+                }
             }
         }
     }).addTo(map);

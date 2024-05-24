@@ -11,5 +11,17 @@
 			"type" : "Point",
 			"coordinates" : [ 149, 488 ]
 		}
+	},
+{
+		"type" : "Feature",
+		"properties" : {
+			"name" : "Walka na Bursztynowym Moście",
+			"type" : "event",
+			"description": "Strażnicy w strażnicy na środku Bursztynowego Mostu zostali zamienieni w ghoule, ale udało się je na szczęście pokonać."
+		},
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [ 372, 218 ]
+		}
 	}]
 }
