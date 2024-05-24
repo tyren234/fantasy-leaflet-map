@@ -2,7 +2,7 @@ var map = L.map('map', {
     crs: L.CRS.Simple,
     maxZoom: 3,
     doubleClickZoom: false,
-}).setView([-100, 100], 3);
+});
 
 const maxBound = 750;
 
@@ -10,7 +10,7 @@ const bounds = [[0, 0], [maxBound, maxBound]];
 const image = L.imageOverlay('img/maps/botw/tiles/0/0_0.jpg', bounds);
 map.addLayer(image);
 map.fitBounds(bounds);
-
+map.setView([maxBound/2, maxBound/2], 1);
 map.on("zoomend", function () {
     // console.log(`Zoomed current zoom level: ${map.getZoom()}`);
     let images = [];
