@@ -1,3 +1,4 @@
 import os
 for i, filename in enumerate(os.listdir()):
-    print(f'{{"type" : "Feature","properties" : {{"name" : "{filename}","type" : "{filename[:-4]}","description": "{filename}"}},"geometry" : {{"type" : "Point","coordinates" : [ {-10}, {0 + i * 22} ]}}}},')
+#     print(f'{{"type" : "Feature","properties" : {{"name" : "{filename}","type" : "{filename[:-4]}","description": "{filename}"}},"geometry" : {{"type" : "Point","coordinates" : [ {-10}, {0 + i * 22} ]}}}},')
+    print(f'"{filename[:-4]}": {filename[:-4]}Icon,')
