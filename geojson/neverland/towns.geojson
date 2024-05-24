@@ -1,0 +1,15 @@
+{
+	"type" : "FeatureCollection",
+	"features" : [{
+		"type" : "Feature",
+		"properties" : {
+			"name" : "Boblingrad",
+			"type" : "capital",
+			"description": "Stolica gobilnów. Znane również jako Miasto w Chmurach. Mieści się na wielkiej kolumnie sięgającej niemal samego nieba. Znane z pradawnych ruin w klifach przepaści oraz z wynalazków mieszkańców rejonu."
+		},
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [ 149, 488 ]
+		}
+	}]
+}

@@ -11,7 +11,7 @@ map.addLayer(image);
 map.fitBounds(bounds);
 
 map.on("zoomend", function () {
-    console.log(`Zoomed current zoom level: ${map.getZoom()}`);
+    // console.log(`Zoomed current zoom level: ${map.getZoom()}`);
     let images = [];
     for (let i = 0; i < images.length; i++) {
         images[i].removeFrom(map);
@@ -44,7 +44,7 @@ function addTiles(numberOfTilesAcross, zoomLevel, containerList) {
 
     for (let column = 0; column < numberOfTilesAcross; column++) {
         for (let row = 0; row < numberOfTilesAcross; row++) {
-            console.log(`Adding image (${zoomLevel}/${column}_${row}.jpg) with following bounds: ${[[maxBound - boundStep * (row + 1), column * boundStep], [maxBound - row * boundStep, boundStep * (column + 1)]]}`);
+            // console.log(`Adding image (${zoomLevel}/${column}_${row}.jpg) with following bounds: ${[[maxBound - boundStep * (row + 1), column * boundStep], [maxBound - row * boundStep, boundStep * (column + 1)]]}`);
             const image = L.imageOverlay(`img/maps/botw/tiles/${zoomLevel}/${column}_${row}.jpg`, [[maxBound - boundStep * (row + 1), column * boundStep], [maxBound - row * boundStep, boundStep * (column + 1)]]).addTo(map);
             containerList.push(image);
         }
@@ -56,8 +56,32 @@ var popup = L.popup();
 function onMapClick(e) {
     popup
         .setLatLng(e.latlng)
-        .setContent(`This point has coordinates (${Math.round(e.latlng.lat)}, ${Math.round(e.latlng.lng)})`)
+        .setContent(`Współrzędne: (${Math.round(e.latlng.lat)}, ${Math.round(e.latlng.lng)})`)
         .openOn(map);
 }
 
 map.on('click', onMapClick);
+
+async function getGeojson(geojsonPath) {
+    let featureCollection;
+
+    await $.getJSON(geojsonPath, function (data) {
+        featureCollection = data;
+    }).fail(function (e) {
+        console.log(`Failed getting geojson ${geojsonPath}`);
+        console.log(e);
+    });
+
+    L.geoJSON(featureCollection, {
+        onEachFeature: function (feature, layer) {
+            if (feature.properties && feature.properties.name && feature.properties.type && feature.properties.description) {
+                layer.bindPopup("<div class='popup'><h1 class='popup'>" + feature.properties.name + "</h1><p class='popup'>" + feature.properties.description + "</p></div>");
+            }
+        }
+    }).addTo(map);
+
+}
+
+geojsonsPaths = ['geojson/neverland/towns.geojson']
+geojsonsPaths.forEach((path) => getGeojson(path));
+
