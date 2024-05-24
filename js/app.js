@@ -3,9 +3,10 @@ var map = L.map('map', {
     maxZoom: 3,
 }).setView([-100, 100], 3);
 
-const maxBound = 1000;
-var bounds = [[0, 0], [maxBound, maxBound]];
-var image = L.imageOverlay('img/maps/botw/tiles/0/0_0.jpg', bounds);
+const maxBound = 750;
+
+const bounds = [[0, 0], [maxBound, maxBound]];
+const image = L.imageOverlay('img/maps/botw/tiles/0/0_0.jpg', bounds);
 map.addLayer(image);
 map.fitBounds(bounds);
 
@@ -20,7 +21,7 @@ map.on("zoomend", function () {
     // 0,0 is in the bottom left corner
 
     if (map.getZoom() === 0) {
-        var image = L.imageOverlay('img/maps/botw/tiles/0/0_0.jpg', bounds).addTo(map);
+        const image = L.imageOverlay('img/maps/botw/tiles/0/0_0.jpg', bounds).addTo(map);
         images.push(image);
     } else if (map.getZoom() === 1) {
         addTiles(2, map.getZoom(), images);
@@ -44,7 +45,7 @@ function addTiles(numberOfTilesAcross, zoomLevel, containerList) {
     for (let column = 0; column < numberOfTilesAcross; column++) {
         for (let row = 0; row < numberOfTilesAcross; row++) {
             console.log(`Adding image (${zoomLevel}/${column}_${row}.jpg) with following bounds: ${[[maxBound - boundStep * (row + 1), column * boundStep], [maxBound - row * boundStep, boundStep * (column + 1)]]}`);
-            var image = L.imageOverlay(`img/maps/botw/tiles/${zoomLevel}/${column}_${row}.jpg`, [[maxBound - boundStep * (row + 1), column * boundStep], [maxBound - row * boundStep, boundStep * (column + 1)]]).addTo(map);
+            const image = L.imageOverlay(`img/maps/botw/tiles/${zoomLevel}/${column}_${row}.jpg`, [[maxBound - boundStep * (row + 1), column * boundStep], [maxBound - row * boundStep, boundStep * (column + 1)]]).addTo(map);
             containerList.push(image);
         }
     }
