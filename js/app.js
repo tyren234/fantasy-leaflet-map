@@ -1,6 +1,7 @@
+const maxZoomLevel = 4
 var map = L.map('map', {
     crs: L.CRS.Simple,
-    maxZoom: 3,
+    maxZoom: maxZoomLevel,
     doubleClickZoom: false,
 });
 
@@ -24,17 +25,10 @@ map.on("zoomend", function () {
     if (map.getZoom() === 0) {
         const image = L.imageOverlay('img/maps/botw/tiles/0/0_0.jpg', bounds).addTo(map);
         images.push(image);
-    } else if (map.getZoom() === 1) {
-        addTiles(2, map.getZoom(), images);
-        // L.imageOverlay('img/maps/botw/tiles/1/0_0.jpg', [[500, 0], [1000, 500]]).addTo(map);
-        // L.imageOverlay('img/maps/botw/tiles/1/0_1.jpg', [[0, 0], [500, 500]]).addTo(map);
-        // L.imageOverlay('img/maps/botw/tiles/1/1_0.jpg', [[500, 500], [1000, 1000]]).addTo(map);
-        // L.imageOverlay('img/maps/botw/tiles/1/1_1.jpg', [[0, 500], [500, 1000]]).addTo(map);
-    } else if (map.getZoom() === 2) {
-        addTiles(4, map.getZoom(), images);
-    } else if (map.getZoom() === 3) {
-        addTiles(8, map.getZoom(), images);
-    } else {
+    } else if (map.getZoom() <= maxZoomLevel) {
+        addTiles(Math.pow(2, map.getZoom()), map.getZoom(), images);
+    }
+    else{
         L.imageOverlay('img/maps/botw/tiles/0/0_0.jpg', bounds).addTo(map);
     }
 })
