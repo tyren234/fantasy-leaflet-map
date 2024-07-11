@@ -10,3 +10,4 @@ https://tyren234.github.io/fantasy-leaflet-map/
 Currently, site contains maps of the following worlds in specified languages:
 
 - Neverland (Polish)
+- Waterdeep (Polish)

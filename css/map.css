@@ -1,4 +1,7 @@
 body {
+    --accent-primary-color: darkorange;
+    --accent-secondary-color: #fff;
+
     margin: 2vw;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -6,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 
 #map {
@@ -16,7 +19,7 @@ body {
     max-width: 1200px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
 }
 
 .leaflet-control-attribution {
@@ -30,9 +33,29 @@ div.popup {
     text-align: center;
 }
 
+.navigation-footer {
+    /*border: 5px solid red;*/
+    position: absolute;
+    bottom: 10px;
+}
+
+.navigation-footer a {
+  box-shadow: inset 0 0 0 0 var(--accent-primary-color);
+  text-decoration: none;
+  color: var(--accent-primary-color);
+    padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.navigation-footer a:hover {
+  color: var(--accent-secondary-color);
+  box-shadow: inset 200px 0 0 0 var(--accent-primary-color);
+}
 
 .logo-container {
     position: relative;
+    margin: 1vw;
+    /*border: 5px solid red;*/
 
     &:before {
         content: "";
@@ -40,7 +63,8 @@ div.popup {
         top: calc(100% - 2px);
         width: 100%;
         height: 4px;
-        background-color: #cf0000;
+        /*background-color: #cf0000;*/
+        background-color: var(--accent-primary-color);
         transform-origin: center center;
         transform: scaleX(0);
 
