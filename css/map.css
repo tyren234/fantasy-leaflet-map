@@ -26,6 +26,10 @@ body {
     font-size: 12px;
 }
 
+.leaflet-container {
+    background: rgba(255, 254, 240, 0.5);
+}
+
 p.popup {
 }
 
@@ -40,16 +44,16 @@ div.popup {
 }
 
 .navigation-footer a {
-  box-shadow: inset 0 0 0 0 var(--accent-primary-color);
-  text-decoration: none;
-  color: var(--accent-primary-color);
+    box-shadow: inset 0 0 0 0 var(--accent-primary-color);
+    text-decoration: none;
+    color: var(--accent-primary-color);
     padding: 0 .25rem;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .navigation-footer a:hover {
-  color: var(--accent-secondary-color);
-  box-shadow: inset 200px 0 0 0 var(--accent-primary-color);
+    color: var(--accent-secondary-color);
+    box-shadow: inset 200px 0 0 0 var(--accent-primary-color);
 }
 
 .logo-container {
