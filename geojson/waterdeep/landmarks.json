@@ -6,7 +6,7 @@
       "properties": {
         "name": "Trollskull Alley",
         "type": "pot",
-        "description": ""
+        "description": "Cicha alejka z wieloma sklepami i starą nawiedzoną karczmą. Karczmą, w której jest aktualnie siedziba naszych bohaterów, przepisana w ramach zapłaty za zlecenie przez samego Volothampa Geddarma."
       },
       "geometry": {
         "type": "Point",
@@ -20,7 +20,7 @@
       "properties": {
         "name": "House of Inspired Hands",
         "type": "fountain",
-        "description": ""
+        "description": "Świątynia Gonda, czczonego przez ludzi i gnomów, przekształca pomysły w konkretne formy i inspiruje śmiertelników do tworzenia wynalazków. Świątynia organizuje na jesieni Day of Wonders, gdzie można zobaczyć najnowsze wynalazki."
       },
       "geometry": {
         "type": "Point",
@@ -32,9 +32,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Trollskull Alley",
+        "name": "The Yawning Portal",
         "type": "pot",
-        "description": ""
+        "description": "Yawning Portal jest karczmą w Waterdeep, znaną z bycia głównym wejściem do Undermountain. Studnia po środku głównej izby prowadzi na pierwszy poziom ogromnego kompleksu lochów. Właścicielem i karczmarzem jest słynny poszukiwacz przygód, Durnan the Wanderer. Nazwa \"Yawning Portal\" odnosi się do głębokiej studni. Oczywiście, zajazd jest popularną atrakcją wśród odwiedzających Waterdeep oraz częstym punktem wypadowym i schronieniem dla ekspedycji w rozległe lochy."
       },
       "geometry": {
         "type": "Point",
@@ -48,7 +48,7 @@
       "properties": {
         "name": "Blackstaff Tower",
         "type": "fountain",
-        "description": ""
+        "description": "Była domem Khelbena \"Blackstaffa\" Arunsuna w Waterdeep, a także jego następców o tym tytule. Budząca grozę czarna struktura jest jednym z najbardziej rozpoznawalnych punktów orientacyjnych w Castle Ward w Waterdeep."
       },
       "geometry": {
         "type": "Point",
