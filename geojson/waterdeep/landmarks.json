@@ -56,6 +56,20 @@
           123, 551
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gralhound Villa",
+        "type": "fountain",
+        "description": "Przy pomocy detektora nimblewright'ów udało wam się ustalić, że tutaj skrywa się zbiegły nimblewright, którego stworzył Nim. Kto wie co może robić w domu jednej ze szlacheckich rodzin Waterdeep?"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          339, 701
+        ]
+      }
     }
   ]
 }
